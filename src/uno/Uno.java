@@ -1,5 +1,6 @@
 package uno;
 
+import dos.Arrays;
 import java.util.Scanner;
 
 public class Uno {
@@ -55,9 +56,34 @@ public class Uno {
         System.out.println(palabra1 + " del " + palabra2);
 
         TipoNumericos numericos = new TipoNumericos(3, "Chao");
+        TipoBooleanos booleanos = new TipoBooleanos(); 
+        TipoCadenas cadenas = new TipoCadenas("bien");
 
         System.out.println(numericos.a);
         System.out.println(numericos.g);
         System.out.println(numericos.aa);
+        System.out.println(booleanos.b);
+        System.out.println(cadenas.a);
+        System.out.println(cadenas.b);
+        System.out.println(cadenas.c);
+        System.out.println(cadenas.d);
+        
+//        Arrays array1 = new Arrays();
+//        System.out.println(array1.a);
+
+        Arrays nuevoArray = new Arrays();
+        
+        System.out.println(nuevoArray.arrayString[0]);
+        System.out.println(nuevoArray.arrayNumero[2]);
+        System.out.println(nuevoArray.arrayBooleano[1]);
+        System.out.println(nuevoArray.arrayByte[3]);
+        
+        System.out.println(nuevoArray.matriz[0][0]);
+        System.out.println(nuevoArray.matriz[0][1]);
+        System.out.println(nuevoArray.matriz[1][0]);
+        System.out.println(nuevoArray.matriz[1][1]);
+        
+        byte[] x = cadenas.c.getBytes();
+        System.out.println(x.length);
     }
 }
